@@ -1,0 +1,32 @@
+{% include 'doctype.html'%}
+	<head>
+		<meta charset="utf-8" />
+		<title>
+			{% block title %}My Rewards Guide{% endblock %}
+		</title>
+
+		{% block meta_description %}
+			{% include 'og.html' %}
+		{% endblock %}
+
+		{% include 'imports.html' %}
+
+		{% block additional_headers %}{% endblock %}
+	</head>
+
+	<body>		
+		<!--header-->
+		{% include "header.html" %}
+
+		<!--START Primary-->
+		<div class="content">
+			{% block content %}{% endblock %}
+		</div>
+		<!--END Primary-->
+
+		<!--footer-->
+		{% include "footer.html" %}
+
+		{% block additional_footers %}{% endblock %}
+	</body>
+</html>
