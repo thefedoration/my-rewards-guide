@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/1.9/ref/settings/
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 
 # Quick-start development settings - unsuitable for production
@@ -72,6 +72,15 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'myrewardsguide.wsgi.application'
 
+TEMPLATE_CONTEXT_PROCESSORS = (
+    # 'django.core.context_processors.debug',
+    # 'django.core.context_processors.i18n',
+    # 'django.core.context_processors.media',
+    # 'django.core.context_processors.static',
+    # 'django.contrib.auth.context_processors.auth',
+    # 'django.contrib.messages.context_processors.messages',
+)
+
 
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
@@ -120,4 +129,30 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
+
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    #   'django.contrib.staticfiles.finders.DefaultStorageFinder',
+
+    # for django compressor
+    # 'compressor.finders.CompressorFinder',
+)
+
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.CachedStaticFilesStorage'
+
+# # django compressor settings
+# COMPRESS_ENABLED = True
+# COMPRESS_CSS_FILTERS = [
+#      'compressor.filters.cssmin.CSSMinFilter'
+# ]
+# COMPRESS_JS_FILTERS = [
+#      'compressor.filters.jsmin.JSMinFilter'
+# ]
+
+# # so compressor also compiles scss files
+# COMPRESS_PRECOMPILERS = (
+#     ('text/x-scss', 'django_libsass.SassCompiler'),
+# )
