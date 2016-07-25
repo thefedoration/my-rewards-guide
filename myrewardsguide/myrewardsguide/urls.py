@@ -13,6 +13,6 @@ urlpatterns = [
     url(r'^', 'myrewardsguide.views.handler404', name='404'),
 ]
 
-urlpatterns += staticfiles_urlpatterns()
+# urlpatterns += staticfiles_urlpatterns()
 # if settings.DEBUG or settings.TESTING:
 #     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
