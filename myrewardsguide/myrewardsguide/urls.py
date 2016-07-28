@@ -8,8 +8,8 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', 'myrewardsguide.views.home', name='home'),
     url(r'^intense', 'myrewardsguide.views.intense', name='intense'),
+    url(r'^$', 'myrewardsguide.views.home', name='home'),
     url(r'^', 'myrewardsguide.views.handler404', name='404'),
 ]
 
