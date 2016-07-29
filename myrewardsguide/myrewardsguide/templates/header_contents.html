@@ -1,0 +1,61 @@
+
+<div class="rd-navbar-inner">
+  <!-- RD Navbar Panel-->
+  <div class="rd-navbar-panel">
+    <!-- RD Navbar Toggle-->
+    <button data-rd-navbar-toggle=".rd-navbar, .rd-navbar-nav-wrap" class="rd-navbar-toggle"><span></span></button>
+    <!--Navbar Brand-->
+    <div class="rd-navbar-brand">
+      <a href="/">
+        <img style='margin-top: -5px;margin-left: -15px;' width='138' height='31' src='/static/img/logo-dark.png' alt=''/>
+      </a>
+    </div>
+  </div>
+  <div class="rd-navbar-menu-wrap">
+    <div class="rd-navbar-nav-wrap">
+      <div class="rd-navbar-mobile-scroll">
+        <!--Navbar Brand Mobile-->
+        <div class="rd-navbar-mobile-brand"><a href="index.html"><img style='margin-top: -5px;margin-left: -15px;' width='138' height='31' src='images/intense/logo-dark.png' alt=''/></a></div>
+        
+        <!-- RD Navbar Nav-->
+        <ul class="rd-navbar-nav">
+          <li class="{% if request.path == '/' %}active{% endif %}">
+            <a href="/"><span>Home</span></a>
+          </li>
+          <li class="{% if '/app/' in request.path %}active{% endif %}">
+            <a href="/app/"><span>App</span></a>
+          </li>
+          <li class="{% if '/cards/' in request.path %}active{% endif %}">
+            <a href="/cards/">
+              <span>Cards</span><span class="rd-navbar-label text-middle label-custom label-danger label-xs-custom label-rounded-custom label">new</span>
+            </a>
+            <ul class="rd-navbar-dropdown">
+              <li><a href="/cards/"><span class="text-middle">All Cards</span></a></li>
+              <li><a href="/cards/"><span class="text-middle">Top Picks</span></a></li>
+              <li>
+                <a href="/cards/">
+                  <span class="text-middle">Categories</span>
+                </a>
+                <ul class="rd-navbar-dropdown">
+                  <li>
+                    <a href="/cards/"><span class="text-middle">Airline</span></a>
+                  </li>
+                  <li>
+                    <a href="/cards/"><span class="text-middle">Rewards</span></a>
+                  </li>
+                  <li>
+                    <a href="/cards/"><span class="text-middle">Cash Back</span></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="{% if request.path == '/about/' %}active{% endif %}">
+            <a href="/about/"><span>About</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+  </div>
+</div>

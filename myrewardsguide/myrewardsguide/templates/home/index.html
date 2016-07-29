@@ -1,14 +1,535 @@
 {% extends 'base.html' %}
 
-{% block additional_headers %}
+{% block header_class %}slider-menu-position{% endblock %}
+{% block nav_class %}rd-navbar-transparent{% endblock %}
 
+{% block header_banner %}
+	{% include "home/banner.html" %}
 {% endblock %}
 
+
+
 {% block content %}
-	<h1>hello world</h1>
+
+<section id="section-childs" class="section-98 section-sm-110">
+  <div class="shell-wide">
+    <h2><span class="big"> Niche Layouts</span></h2>
+    <div>
+      <hr class="divider bg-mantis">
+    </div>
+    <h3 class="text-regular offset-top-66">Check out other themes based on<span class="text-uppercase text-ubold text-mantis"> Intense</span></h3>
+    <div class="offset-top-41">
+              <div class="isotope-wrap">
+                <div class="row">
+                  <!-- Isotope Filters-->
+                  <div class="col-lg-12">
+                    <div class="isotope-filters isotope-filters-horizontal">
+                      <ul class="list-inline list-inline-sm">
+                        <li class="veil-md">
+                          <p>Choose your category:</p>
+                        </li>
+                        <li class="section-relative">
+                          <button data-custom-toggle="isotope-1" data-custom-toggle-disable-on-blur="true" class="isotope-filters-toggle btn btn-sm btn-default">Filter<span class="caret"></span></button>
+                          <ul id="isotope-1" class="list-sm-inline isotope-filters-list">
+                            <li><a data-isotope-filter="*" data-isotope-group="gallery" href="#" class="text-bold active">All</a></li>
+                            <li><a data-isotope-filter="Infrastructure" data-isotope-group="gallery" href="#" class="text-bold">Infrastructure</a></li>
+                            <li><a data-isotope-filter="Portfolio" data-isotope-group="gallery" href="#" class="text-bold">Portfolio</a></li>
+                            <li><a data-isotope-filter="Blog" data-isotope-group="gallery" href="#" class="text-bold">Blog</a></li>
+                            <li><a data-isotope-filter="Agency" data-isotope-group="gallery" href="#" class="text-bold">Agency</a></li>
+                            <li><a data-isotope-filter="Creative" data-isotope-group="gallery" href="#" class="text-bold">Creative</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- Isotope Content-->
+                  <div class="col-lg-12 offset-top-34">
+                    <div data-isotope-layout="fitRows" data-isotope-group="gallery" class="isotope">
+                      <!-- Isotope-->
+                      <div class="row">
+                        <div data-filter="All" class="col-xs-12 col-sm-6 col-lg-4 isotope-item">
+                          <div class="inset-xl-left-20 inset-xl-right-20">
+                            <div class="shadow-variant-2"><a class="thumbnail-classic" href="index-variant-2.html" target="_blank">
+                                        <figure><img width="570" height="428" src="images/intense/intense-570x428.jpg" alt="">
+                                          <figcaption class="thumbnail-classic-caption text-center">
+                                            <h4 class="thumbnail-classic-title text-uppercase text-light">Intense</h4>
+                                            <p class="thumbnail-classic-desc text-bold text-uppercase veil reveal-xs-block">Feel the power of future</p>
+                                          </figcaption>
+                                        </figure></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-filter="Agency" class="col-xs-12 col-sm-6 col-lg-4 isotope-item">
+                          <div class="inset-xl-left-20 inset-xl-right-20">
+                            <div class="shadow-variant-2"><a class="thumbnail-classic" href="intense-job-board" target="_blank">
+                                        <figure><img width="570" height="428" src="images/childs/intense-job-board-570x428.jpg" alt="">
+                                          <figcaption class="thumbnail-classic-caption text-center">
+                                            <h4 class="thumbnail-classic-title text-uppercase text-light">Intense Job Board</h4>
+                                            <p class="thumbnail-classic-desc text-bold text-uppercase veil reveal-xs-block">Best for employment services</p>
+                                          </figcaption>
+                                        </figure></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-filter="Infrastructure" class="col-xs-12 col-sm-6 col-lg-4 isotope-item">
+                          <div class="inset-xl-left-20 inset-xl-right-20">
+                            <div class="shadow-variant-2"><a class="thumbnail-classic" href="intense-child-care" target="_blank">
+                                        <figure><img width="570" height="428" src="images/childs/intense-child-care-570x428.jpg" alt="">
+                                          <figcaption class="thumbnail-classic-caption text-center">
+                                            <h4 class="thumbnail-classic-title text-uppercase text-light">Intense Child Care</h4>
+                                            <p class="thumbnail-classic-desc text-bold text-uppercase veil reveal-xs-block">Best for child care services</p>
+                                          </figcaption>
+                                        </figure></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-filter="Agency" class="col-xs-12 col-sm-6 col-lg-4 isotope-item">
+                          <div class="inset-xl-left-20 inset-xl-right-20">
+                            <div class="shadow-variant-2"><a class="thumbnail-classic" href="intense-financial-analytic" target="_blank">
+                                        <figure><img width="570" height="428" src="images/childs/intense-financial-advisor-570x428.jpg" alt="">
+                                          <figcaption class="thumbnail-classic-caption text-center">
+                                            <h4 class="thumbnail-classic-title text-uppercase text-light">Intense Financial Advisor</h4>
+                                            <p class="thumbnail-classic-desc text-bold text-uppercase veil reveal-xs-block">Best for financial companies</p>
+                                          </figcaption>
+                                        </figure></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-filter="Agency" class="col-xs-12 col-sm-6 col-lg-4 isotope-item">
+                          <div class="inset-xl-left-20 inset-xl-right-20">
+                            <div class="shadow-variant-2"><a class="thumbnail-classic" href="intense-gym" target="_blank">
+                                        <figure><img width="570" height="428" src="images/childs/intense-gym-570x428.jpg" alt="">
+                                          <figcaption class="thumbnail-classic-caption text-center">
+                                            <h4 class="thumbnail-classic-title text-uppercase text-light">Intense Gym</h4>
+                                            <p class="thumbnail-classic-desc text-bold text-uppercase veil reveal-xs-block">Best for sport clubs</p>
+                                          </figcaption>
+                                        </figure></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-filter="Infrastructure" class="col-xs-12 col-sm-6 col-lg-4 isotope-item">
+                          <div class="inset-xl-left-20 inset-xl-right-20">
+                            <div class="shadow-variant-2"><a class="thumbnail-classic" href="intense-dental-clinic" target="_blank">
+                                        <figure><img width="570" height="428" src="images/childs/intense-dental-clinic-570x428.jpg" alt="">
+                                          <figcaption class="thumbnail-classic-caption text-center">
+                                            <h4 class="thumbnail-classic-title text-uppercase text-light">Intense Dental Clinic</h4>
+                                            <p class="thumbnail-classic-desc text-bold text-uppercase veil reveal-xs-block">Best for professional dentists</p>
+                                          </figcaption>
+                                        </figure></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-filter="Creative" class="col-xs-12 col-sm-6 col-lg-4 isotope-item">
+                          <div class="inset-xl-left-20 inset-xl-right-20">
+                            <div class="shadow-variant-2"><a class="thumbnail-classic" href="intense-handmade" target="_blank">
+                                        <figure><img width="570" height="428" src="images/childs/intense-handmade-570x428.jpg" alt="">
+                                          <figcaption class="thumbnail-classic-caption text-center">
+                                            <h4 class="thumbnail-classic-title text-uppercase text-light">Intense Handmade</h4>
+                                            <p class="thumbnail-classic-desc text-bold text-uppercase veil reveal-xs-block">Best for handmade fans</p>
+                                          </figcaption>
+                                        </figure></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-filter="Agency" class="col-xs-12 col-sm-6 col-lg-4 isotope-item">
+                          <div class="inset-xl-left-20 inset-xl-right-20">
+                            <div class="shadow-variant-2"><a class="thumbnail-classic" href="intense-real-estate" target="_blank">
+                                        <figure><img width="570" height="428" src="images/childs/intense-real-estate-570x428.jpg" alt="">
+                                          <figcaption class="thumbnail-classic-caption text-center">
+                                            <h4 class="thumbnail-classic-title text-uppercase text-light">Intense Real Estate</h4>
+                                            <p class="thumbnail-classic-desc text-bold text-uppercase veil reveal-xs-block">Best for property agencies</p>
+                                          </figcaption>
+                                        </figure></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-filter="Blog" class="col-xs-12 col-sm-6 col-lg-4 isotope-item">
+                          <div class="inset-xl-left-20 inset-xl-right-20">
+                            <div class="shadow-variant-2"><a class="thumbnail-classic" href="intense-personal-blog" target="_blank">
+                                        <figure><img width="570" height="428" src="images/childs/intense-personal-blog-570x428.jpg" alt="">
+                                          <figcaption class="thumbnail-classic-caption text-center">
+                                            <h4 class="thumbnail-classic-title text-uppercase text-light">Intense Personal Blog</h4>
+                                            <p class="thumbnail-classic-desc text-bold text-uppercase veil reveal-xs-block">Best for individual bloggers</p>
+                                          </figcaption>
+                                        </figure></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-filter="Portfolio" class="col-xs-12 col-sm-6 col-lg-4 isotope-item">
+                          <div class="inset-xl-left-20 inset-xl-right-20">
+                            <div class="shadow-variant-2"><a class="thumbnail-classic" href="intense-photographer-portfolio" target="_blank">
+                                        <figure><img width="570" height="428" src="images/childs/intense-photographer-570x428.jpg" alt="">
+                                          <figcaption class="thumbnail-classic-caption text-center">
+                                            <h4 class="thumbnail-classic-title text-uppercase text-light">Intense Photographer</h4>
+                                            <p class="thumbnail-classic-desc text-bold text-uppercase veil reveal-xs-block">Best for individual photographers</p>
+                                          </figcaption>
+                                        </figure></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-filter="Infrastructure" class="col-xs-12 col-sm-6 col-lg-4 isotope-item">
+                          <div class="inset-xl-left-20 inset-xl-right-20">
+                            <div class="shadow-variant-2"><a class="thumbnail-classic" href="intense-restaurant" target="_blank">
+                                        <figure><img width="570" height="428" src="images/childs/intense-restaurant-570x428.jpg" alt="">
+                                          <figcaption class="thumbnail-classic-caption text-center">
+                                            <h4 class="thumbnail-classic-title text-uppercase text-light">Intense Restaurant</h4>
+                                            <p class="thumbnail-classic-desc text-bold text-uppercase veil reveal-xs-block">Best for restaurants and cafes</p>
+                                          </figcaption>
+                                        </figure></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    </div>
+  </div>
+</section>
+<div class="shell-fluid">
+  <hr class="hr bg-gray-lighter">
+</div>
+<!-- Skills-->
+<section class="section-top-98">
+  <div class="shell-wide">
+    <div class="range range-xs-center">
+      <div class="cell-sm-10 cell-lg-12">
+        <div class="range range-xs-center">
+          <div class="cell-md-3 cell-sm-5">
+                    <!-- Counter type 2-->
+                    <div class="counter-type-2"><span class="icon mdi mdi-file-xml text-mantis"></span>
+                      <div class="offset-top-10"><span data-speed="1200" data-from="0" data-to="200" class="h1 text-bold counter"></span><span class="h1 text-bold">+</span></div>
+                      <div class="h6 text-uppercase text-spacing-60 text-bold offset-top-14">html Templates</div>
+                    </div>
+          </div>
+          <div class="cell-md-3 cell-sm-5 offset-top-66 offset-sm-top-0">
+                    <!-- Counter type 2-->
+                    <div class="counter-type-2"><span class="icon mdi mdi-star text-malibu"></span>
+                      <div class="offset-top-10">
+                        <div data-speed="1600" data-from="0" data-to="10" class="h1 text-bold counter"></div>
+                      </div>
+                      <div class="h6 text-uppercase text-spacing-60 text-bold offset-top-14">niche templates</div>
+                    </div>
+          </div>
+          <div class="cell-md-3 cell-sm-5 offset-top-66 offset-md-top-0">
+                    <!-- Counter type 2-->
+                    <div class="counter-type-2"><span class="icon mdi mdi-palette text-neon-carrot"></span>
+                      <div class="offset-top-10">
+                        <div data-speed="2000" data-from="0" data-to="9" class="h1 text-bold counter"></div>
+                      </div>
+                      <div class="h6 text-uppercase text-spacing-60 text-bold offset-top-14">different skins</div>
+                    </div>
+          </div>
+          <div class="cell-md-3 cell-sm-5 offset-top-66 offset-md-top-0">
+                    <!-- Counter type 2-->
+                    <div class="counter-type-2"><span class="icon mdi mdi-file-image text-ku-crimson"></span>
+                      <div class="offset-top-10"><span data-speed="2400" data-from="0" data-to="200" class="h1 text-bold counter"></span><span class="h1 text-bold">+</span></div>
+                      <div class="h6 text-uppercase text-spacing-60 text-bold offset-top-14">psd files</div>
+                    </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="shell-fluid offset-top-98">
+    <hr class="hr bg-gray">
+  </div>
+</section>
+<!-- Button Ansi-->
+<!-- Buy Now-->
+<section>
+          <!-- Call to action type 2-->
+          <section class="section-66 bg-acapulco context-dark">
+            <div class="shell">
+              <div class="range range-xs-middle range-condensed">
+                <div class="cell-md-8 cell-lg-9 text-center text-md-left">
+                  <h2><span class="big">Intense is exactly what you need</span></h2>
+                </div>
+                <div class="cell-md-4 cell-lg-3 offset-top-41 offset-md-top-0"><a href="//www.templatemonster.com/intense-multipurpose-html-template.html?utm_source=livedemo&amp;utm_medium=themebutton&amp;utm_campaign=intense" class="btn btn-icon btn-lg btn-default btn-anis-effect btn-icon-btn-icon-left"><span class="icon mdi mdi-cart-outline"></span>Buy intense now</a>
+                </div>
+              </div>
+            </div>
+          </section>
+</section>
+<!-- What Do You Get With Intense?-->
+<section class="section-98 section-sm-110">
+  <div class="shell">
+    <h2><span class="big"> What Do You Get With Intense?</span></h2>
+    <hr class="divider bg-mantis">
+    <div class="range range-xs-center offset-top-50 offset-top-66">
+      <div class="cell-sm-7 cell-md-4">
+        <div class="inset-xs-left-50 inset-xs-right-50 inset-md-left-0 inset-md-right-0">
+                  <!-- Icon Box Type 4--><span class="icon icon-circle icon-bordered icon-red-filled icon-outlined mdi mdi-vector-square"></span>
+                  <div>
+                    <h4 class="offset-top-30 text-bold">Advanced UI Kit for Web Developers</h4>
+                  </div>
+        </div>
+      </div>
+      <div class="cell-sm-7 cell-md-4 offset-top-66 offset-md-top-0">
+        <div class="inset-xs-left-50 inset-xs-right-50 inset-md-left-0 inset-md-right-0 inset-lg-left-50 inset-lg-right-50">
+                  <!-- Icon Box Type 4--><span class="icon icon-circle icon-bordered icon-blue-gray-filled icon-outlined mdi mdi-bulletin-board"></span>
+                  <div>
+                    <h4 class="offset-top-30 text-bold">Extended Bootstrap Toolkit</h4>
+                  </div>
+        </div>
+      </div>
+      <div class="cell-sm-7 cell-md-4 offset-top-66 offset-md-top-0">
+        <div class="inset-xs-left-50 inset-xs-right-50 inset-md-left-0 inset-md-right-0">
+                  <!-- Icon Box Type 4--><span class="icon icon-circle icon-bordered icon-mantis-filled icon-outlined mdi mdi-refresh"></span>
+                  <div>
+                    <h4 class="offset-top-30 text-bold">Lifetime Free Updates</h4>
+                  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Home Layouts and Demos-->
+<section class="section-top-66 section-bottom-85 section-lg-top-66 section-lg-bottom-124 bg-lighter">
+  <div class="shell">
+    <div class="range range-xs-center">
+      <div class="cell-sm-10 cell-lg-8 text-lg-left">
+        <div style="margin-bottom: 30px;" class="mock-up-wrapper veil reveal-lg-inline-block">
+          <div data-wow-duration="1s" data-wow-delay="0.2s" style="" class="wow fadeInLeft"><img src="images/features/home-intro-21-470x327.jpg" width="470" height="327" alt="" class="img-responsive shadow-drop-lg"></div>
+          <div data-wow-duration="1s" data-wow-delay="0.6s" style="position: absolute; top: 85px; right: -250px;" class="wow fadeInLeft"><img src="images/features/home-intro-20-470x327.jpg" width="470" height="327" alt="" class="img-responsive shadow-drop-lg"></div>
+          <div data-wow-duration="1s" data-wow-delay="1.2s" style="position: absolute; right: -95px; bottom: -200px; z-index: 1;" class="wow fadeInLeft"><img src="images/features/home-intro-19-470x327.jpg" width="470" height="327" alt="" class="img-responsive shadow-drop-lg"></div>
+        </div><img src="images/features/home-intro-01-750x600.png" width="750" height="600" alt="" data-wow-delay="0.6s" class="img-responsive veil reveal-sm-inline-block veil-lg wow fadeIn">
+      </div>
+      <div class="cell-sm-8 cell-lg-4 offset-top-0 offset-sm-top-41 offset-lg-top-0 text-lg-left">
+        <div class="section-lg-top-34">
+          <div class="inset-lg-right-20">
+            <h1>Home Layouts and Demos</h1>
+            <p>Choose from our wide range of predefined Homepage layouts and demos to create your Own Amazing Experience.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Extremely Responsive and Retina-->
+<section class="section-top-66 section-bottom-85 section-sm-top-110 section-lg-bottom-66 bg-blue-gray context-dark">
+  <div class="shell">
+    <div class="range range-xs-center">
+      <div class="cell-sm-10 cell-lg-7 cell-lg-push-1"><img src="images/features/home-intro-02-730x380.png" width="730" height="380" alt="" data-wow-delay="0.6s" class="img-responsive veil reveal-sm-inline-block wow fadeInRight"></div>
+      <div class="cell-sm-8 cell-lg-5 cell-lg-pull-1 offset-top-0 offset-sm-top-41 offset-lg-top-0 text-lg-left">
+        <h1>Extremely Responsive and Retina</h1>
+        <p>Create Your Own Business, Blog or any kind of activity Quick and Easy with our unbelievable already made niche templates.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="context-dark">
+          <!-- RD Parallax-->
+          <div data-on="false" data-md-on="true" class="rd-parallax">
+            <div data-speed="0.35" data-type="media" data-url="images/backgrounds/background-33-1920x474.jpg" class="rd-parallax-layer"></div>
+            <div data-speed="0" data-type="html" class="rd-parallax-layer">
+              <div class="bg-overlay-gray-darkest">
+                <div class="shell section-98 section-sm-110">
+                  <h1>Limitless Header and Footer Variations</h1>
+                  <div class="range range-xs-center offset-top-20">
+                    <div class="cell-sm-10 cell-lg-12">
+                      <p>Choose from a wide variety of our awesome ready-made Header & Footer styles or just create your own.</p>
+                    </div>
+                  </div>
+                  <div class="range range-xs-center offset-top-66">
+                    <div class="cell-sm-10 cell-lg-12">
+                      <div class="range range-xs-center">
+                        <div class="cell-xs-6 cell-sm-5 cell-md-4 cell-lg-2"><img src="images/features/home-intro-04-150x100.png" width="150" height="100" alt="" class="img-responsive center-block">
+                          <p>Transparent</p>
+                        </div>
+                        <div class="cell-xs-6 cell-sm-5 cell-md-4 cell-lg-2 offset-top-66 offset-xs-top-0"><img src="images/features/home-intro-05-150x100.png" width="150" height="100" alt="" class="img-responsive center-block">
+                          <p>Background Header</p>
+                        </div>
+                        <div class="cell-xs-6 cell-sm-5 cell-md-4 cell-lg-2 offset-top-66 offset-md-top-0"><img src="images/features/home-intro-06-150x100.png" width="150" height="100" alt="" class="img-responsive center-block">
+                          <p>Center Aligned</p>
+                        </div>
+                        <div class="cell-xs-6 cell-sm-5 cell-md-4 cell-lg-2 offset-top-66 offset-lg-top-0"><img src="images/features/home-intro-07-150x100.png" width="150" height="100" alt="" class="img-responsive center-block">
+                          <p>Floating</p>
+                        </div>
+                        <div class="cell-xs-6 cell-sm-5 cell-md-4 cell-lg-2 offset-top-66 offset-lg-top-0"><img src="images/features/home-intro-08-150x100.png" width="150" height="100" alt="" class="img-responsive center-block">
+                          <p>Left Side-Header</p>
+                        </div>
+                        <div class="cell-xs-6 cell-sm-5 cell-md-4 cell-lg-2 offset-top-66 offset-lg-top-0"><img src="images/features/home-intro-09-150x100.png" width="150" height="100" alt="" class="img-responsive center-block">
+                          <p>Fullscreen Overlay</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+</section>
+<!-- Portfolio Templates-->
+<section class="section-top-66 section-bottom-85 section-lg-top-34 section-lg-bottom-254">
+  <div class="shell">
+    <div class="range range-xs-center">
+      <div class="cell-sm-10 cell-lg-8 cell-lg-push-1 text-lg-right">
+        <div style="margin-top: -65px;" class="mock-up-wrapper veil reveal-lg-inline-block">
+          <div data-wow-duration="1s" data-wow-delay="0.2s" style="" class="wow fadeInRight"><img src="images/features/home-intro-24-420x292.jpg" width="420" height="292" alt="" class="img-responsive shadow-drop-lg"></div>
+          <div data-wow-duration="1s" data-wow-delay="0.6s" style="position: absolute; top: 100px; left: -350px;" class="wow fadeInRight"><img src="images/features/home-intro-23-420x292.jpg" width="420" height="292" alt="" class="img-responsive shadow-drop-lg"></div>
+          <div data-wow-duration="1s" data-wow-delay="1.2s" style="position: absolute; right: 150px; bottom: -222px; z-index: 1; width: 100%;" class="wow fadeInRight"><img src="images/features/home-intro-22-420x292.jpg" width="420" height="292" alt="" class="img-responsive shadow-drop-lg"></div>
+        </div><img src="images/features/home-intro-10-820x570.png" width="820" height="570" alt="" data-wow-delay="0.6s" class="img-responsive veil reveal-sm-inline-block veil-lg wow fadeIn">
+      </div>
+      <div class="cell-sm-8 cell-lg-4 cell-lg-pull-1 offset-top-0 offset-sm-top-41 offset-lg-top-0 text-lg-left">
+        <div class="section-lg-top-66">
+          <div class="inset-lg-right-20">
+            <h1>Portfolio Templates</h1>
+            <p>Showcase any of your products or projects with our great selection of Portfolio templates.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Blog Templates-->
+<section class="section-top-66 section-bottom-85 section-lg-top-110 section-lg-bottom-50 context-dark bg-mantis">
+  <div class="shell">
+    <div class="range range-xs-center">
+      <div class="cell-sm-10 cell-lg-8"><img src="images/features/home-intro-11-745x325.png" width="745" height="325" alt="" data-wow-delay="0.6s" class="img-responsive veil reveal-sm-inline-block wow fadeInLeft"></div>
+      <div class="cell-sm-8 cell-lg-4 offset-top-0 offset-sm-top-41 offset-lg-top-0 text-lg-left">
+        <div class="inset-lg-left-20">
+          <h1>Blog Templates</h1>
+          <p>Create any kind of blog variations & styles using our well-done Blog templates</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- eCommerce Ready-->
+<section class="section-top-66 section-bottom-85 section-lg-top-34 section-lg-bottom-34">
+  <div class="shell">
+    <div class="range range-xs-center">
+      <div class="cell-sm-8 cell-lg-7 cell-lg-push-1"><img src="images/features/home-intro-12-730x550.png" width="730" height="550" alt="" data-wow-delay="0.6s" style="position: relative; margin-top: -80px;" class="img-responsive veil reveal-lg-inline-block wow fadeInRight"><img src="images/features/home-intro-12-730x550.png" width="730" height="550" alt="" data-wow-delay="0.6s" class="img-responsive veil reveal-sm-inline-block veil-lg wow fadeIn"></div>
+      <div class="cell-sm-8 cell-lg-5 cell-lg-pull-1 offset-top-0 offset-sm-top-41 offset-lg-top-0 text-lg-left">
+        <div class="section-lg-top-66">
+          <div class="inset-lg-right-50">
+            <h1>eCommerce Ready</h1>
+            <p>We have included all you may need to build an Amazing eCommerce Website from a scratch. Create your successful business now!</p>
+            <ul class="list list-marked">
+              <li>Grid View</li>
+              <li>Shopping Cart Page</li>
+              <li>Checkout Page</li>
+              <li>Single Product Page</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Event Managing-->
+<section class="section-top-66 section-bottom-85 section-lg-top-85 section-lg-bottom-0 bg-blue-gray context-dark">
+  <div class="shell">
+    <div class="range range-xs-center">
+      <div class="cell-sm-8 cell-lg-8">
+        <div style="overflow: hidden;"><img src="images/features/home-intro-13-730x500.jpg" width="730" height="500" alt="" data-wow-delay="0.6s" style="margin-bottom: -75px;" class="shadow-drop-lg img-responsive veil reveal-lg-inline-block wow fadeInUp"></div><img src="images/features/home-intro-13-730x500.jpg" width="730" height="500" alt="" data-wow-delay="0.6s" class="shadow-drop-lg img-responsive center-block veil reveal-sm-inline-block veil-lg wow fadeIn">
+      </div>
+      <div class="cell-sm-8 cell-lg-4 offset-top-0 offset-sm-top-41 offset-lg-top-0 text-lg-left">
+        <div class="section-lg-top-34">
+          <div class="inset-lg-left-20">
+            <h1>Event Managing</h1>
+            <p>Share your public events quick and easy with your customers. Use our extremely customizable event calendar to create your own comps.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Powerful Search Engine-->
+<section style="box-shadow: 0px -5px 23px 0 rgba(0, 0, 0, 0.15);" class="section-top-124 section-bottom-85 section-sm-top-124 section-lg-top-34 section-lg-bottom-85">
+  <div class="shell">
+    <div class="range range-xs-center">
+      <div class="cell-sm-10 cell-lg-7 cell-lg-push-1">
+        <div style="overflow: hidden; z-index: 1; position: relative; bottom: -40px; margin-bottom: -80px;">
+          <div class="mock-up-wrapper veil reveal-lg-inline-block">
+            <div data-wow-duration="1s" data-wow-delay="0s" style="position: absolute; right: -125px; z-index: -1;" class="wow fadeInUpBig shadow-drop-lg"><img src="images/features/home-intro-17-354x243.jpg" width="354" height="243" alt="" class="img-responsive"></div>
+            <div data-wow-duration="1s" data-wow-delay="0.4s" style="margin-top: 70px; margin-right: 40px;" class="wow fadeInUpBig shadow-drop-lg"><img src="images/features/home-intro-16-354x243.jpg" width="354" height="243" alt="" class="img-responsive"></div>
+            <div data-wow-duration="1s" data-wow-delay="1.6s" style="left: -35%; bottom: 50px;" class="mock-up-circle wow zoomIn"><img src="images/features/home-intro-18-245x230.png" width="245" height="230" alt="" class="img-responsive"></div>
+          </div>
+        </div><img src="images/features/home-intro-14-670x350.png" width="670" height="350" alt="" data-wow-delay="0.6s" class="img-responsive veil reveal-sm-inline-block veil-lg wow fadeIn">
+      </div>
+      <div class="cell-sm-8 cell-lg-5 cell-lg-pull-1 offset-top-0 offset-sm-top-41 offset-lg-top-0 text-lg-left">
+        <div class="section-lg-top-66">
+          <div class="inset-lg-right-20 inset-lg-left-20">
+            <h1>Powerful Search Engine</h1>
+            <p>Get a new kind of experience with our new powerful search engine</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Demo Images Included for Free-->
+<section class="context-dark">
+          <!-- RD Parallax-->
+          <div data-on="false" data-md-on="true" class="rd-parallax">
+            <div data-speed="0.35" data-type="media" data-url="images/features/home-intro-15-1920x592.jpg" class="rd-parallax-layer"></div>
+            <div data-speed="0" data-type="html" class="rd-parallax-layer">
+              <div class="bg-overlay-gray-darkest">
+                <div class="shell section-98 section-sm-110 section-lg-254">
+                  <h1>Demo Images Included for Free</h1>
+                  <p>Save more than $35 on awesome premium images included in demo</p>
+                </div>
+              </div>
+            </div>
+          </div>
+</section>
+<!-- 200+ PSD Included-->
+<section class="section-98 section-sm-41 bg-lighter">
+  <div class="shell">
+    <div class="range range-xs-center text-sm-left">
+      <div class="cell-sm-10 cell-md-8 cell-lg-6">
+        <div class="inset-sm-left-30 inset-lg-left-0">
+          <!-- Unit SM-->
+          <div class="unit unit-sm unit-sm-horizontal">
+            <div class="unit-left"><img src="images/features/home-intro-03-99x100.png" width="99" height="100" alt="" class="img-responsive center-block"></div>
+            <div class="unit-body">
+              <div class="offset-lg-top-10">
+                <h1>200+ PSD Included</h1>
+              </div>
+              <p class="offset-top-10">Get all template design sources used in project just for free</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Dedicated 24/7 Support-->
+<section class="section-98 section-sm-110">
+  <div class="shell">
+    <div class="range range-xs-center">
+      <div class="cell-sm-10 cell-md-8 cell-lg-6"><span class="icon icon-lg mdi mdi-headset"></span>
+        <div class="offset-top-20">
+          <h1>Dedicated 24/7 Support</h1>
+          <p>Our Support Service is always available 24 hours a day, 7 days a week to help you create your own business solution.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Button Ansi-->
+<!-- Buy Now-->
+<section>
+          <!-- Call to action type 2-->
+          <section class="section-66 bg-mantis context-dark">
+            <div class="shell">
+              <div class="range range-xs-middle range-condensed">
+                <div class="cell-md-8 cell-lg-9 text-center text-md-left">
+                  <h2><span class="big">Intense is exactly what you need</span></h2>
+                </div>
+                <div class="cell-md-4 cell-lg-3 offset-top-41 offset-md-top-0"><a href="//www.templatemonster.com/intense-multipurpose-html-template.html?utm_source=livedemo&amp;utm_medium=themebutton&amp;utm_campaign=intense" class="btn btn-icon btn-lg btn-default btn-anis-effect btn-icon-btn-icon-left"><span class="icon mdi mdi-cart-outline"></span>Buy intense now</a>
+                </div>
+              </div>
+            </div>
+          </section>
+</section>
+
 {% endblock content %}
 
 
-
+{% block additional_footers %}{% endblock %}
 
 
