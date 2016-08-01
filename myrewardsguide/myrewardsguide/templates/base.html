@@ -47,15 +47,18 @@
 				{% block content %}{% endblock %}
 			</main>
 
-			{% if not noheader %}
+			{% if not nofooter %}
 				<!--footer-->
 				{% include "footer.html" %}
 			{% endif %}
 
-			<!-- runs js needed on every page -->
-			<script src="/static/js/core.min.js"></script>
-			<script src="/static/js/script.js"></script>
+		</div>
 
-			{% block additional_footers %}{% endblock %}
+		<!-- runs js needed on every page -->
+		<script src="/static/js/core.min.js"></script>
+		<script src="/static/js/script.js"></script>
+
+
+		{% block additional_footers %}{% endblock %}
 	</body>
 </html>
