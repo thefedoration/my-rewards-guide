@@ -9,8 +9,8 @@ LANDING PAGE
 def home(request):
 	return render(request, 'home/index.html')
 
-def intense(request):
-	return render(request, 'home/intense.html')
+def app(request):
+	return render(request, 'app.html', {'noheader': True, 'nofooter': True})
 
 
 def handler404(request):

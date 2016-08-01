@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block main_style %}
+	background: #191919 url(/static/img/banner/waterfront.jpg) 0/cover no-repeat
+{% endblock main_style %}
+
+{% block content %}
+	<div class="one-page">
+	  <div class="one-page-header">
+	    <!--Navbar Brand-->
+	    <div class="rd-navbar-brand"><a href="/"><img style='margin-top: -5px;margin-left: -15px;' height='45' src='/static/img/logo-semiwhite.png' alt=''/></a></div>
+	  </div>
+	  <!-- Coming Soon-->
+	  <section>
+	    <div class="shell">
+	      <div class="range">
+	        <div class="range range-xs-center range-xs-middle section-110 section-cover context-dark">
+	          <div class="cell-xs-12">
+	            <h3 class="text-center">iOS app Launching Soon (Android in Fall 2016)</h3>
+	            <hr class="divider divider-md bg-mantis">
+	            <div class="offset-top-34">
+	                <!-- Countdown-->
+	                <div class="countdown-custom countdown-ellipse">
+	                  <div data-type="until" data-time="15 Sep 2016" data-format="dhms" class="countdown"></div>
+	                </div>
+	            </div>
+	            <div class="range range-sm-center offset-top-24">
+	              <div class="cell-sm-8 cell-md-6 cell-lg-4"><small>Get notified when our app goes live</small>
+	                <div class="offset-top-4">
+                    <form data-form-output="form-output-global" data-form-type="subscribe" method="post" action="bat/rd-mailform.php" class="rd-mailform">
+                      <div class="form-group">
+                        <div class="input-group input-group-sm">
+                          <input placeholder="Type your E-Mail" type="email" data-constraints="@Required @Email" name="email" class="form-control"><span class="input-group-btn">
+                            <button type="submit" class="btn btn-sm btn-primary">Subscribe</button></span>
+                        </div>
+                      </div>
+                    </form>
+	                </div>
+	              </div>
+	            </div>
+	            <div class="group offset-top-30">
+	            	<a href="/" class="btn btn-icon btn-icon-left btn-primary"><span class="icon mdi mdi-arrow-left"></span>back to home</a>
+	            	<a href="mailto:info@myrewardsguide.com" class="btn btn-icon btn-icon-left btn-default"><span class="icon mdi mdi-email-outline"></span>Contact us</a>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	  </section>
+	  <div class="one-page-footer">
+			<p style="color: rgba(255,255,255, 0.3)" class="small">My Rewards Guide &copy; <span id="copyright-year"></span> . <a href="/privacy-policy/">Privacy Policy</a></p>
+		</div>
+	</div>
+{% endblock content %}
