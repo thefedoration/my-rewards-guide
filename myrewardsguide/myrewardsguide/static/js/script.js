@@ -75,6 +75,7 @@ var userAgent = navigator.userAgent.toLowerCase(),
 /**
  * Initialize All Scripts
  */
+
 $document.ready(function () {
 
   /**
@@ -1665,6 +1666,7 @@ $document.ready(function () {
                 async: false
               })
                 .done(function (responceCode) {
+                  console.log(responceCode)
                   if (responceCode != 'CPT000') {
                     if (output.hasClass("snackbars")) {
                       output.html('<p><span class="icon text-middle mdi mdi-check icon-xxs"></span><span>' + captchaMsg[responceCode] + '</span></p>')
@@ -1698,13 +1700,29 @@ $document.ready(function () {
           }
         },
         error: function (result) {
-          var output = $("#" + $(plugins.rdMailForm[this.extraData.counter]).attr("data-form-output"));
-          output.text(msg[result]);
-          form.removeClass('form-in-process');
 
-          if(formHasCaptcha) {
-            grecaptcha.reset();
-          }
+          // var output = $("#" + $(plugins.rdMailForm[this.extraData.counter]).attr("data-form-output"));
+          // // output.text(msg[result]);
+          // console.log(result['responseJSON'][Object.keys(result['responseJSON'])[0]][0])
+          // output.text(result['responseJSON'][Object.keys(result['responseJSON'])[0]][0]); // hardcoded response from form for subscribe box
+          var text = result['responseJSON'][Object.keys(result['responseJSON'])[0]][0] // hardcoded response from form for subscribe box
+          alert(text)
+          $form.removeClass('form-in-process');
+          $form.clearForm();
+          $form.removeClass('success');
+          // output.html(' <p class="snackbars-left"><span class="icon icon-xxs mdi mdi-alert-outline text-middle"></span><span>' + text + '</span></p>');
+
+          // $form.clearForm();
+          // $form.find('input, textarea').blur();
+
+          // setTimeout(function () {
+          //   output.removeClass("active error success");
+          //   $form.removeClass('success');
+          // }, 3500);
+
+          // if(formHasCaptcha) {
+          //   grecaptcha.reset();
+          // }
         },
         success: function (result) {
           var form = $(plugins.rdMailForm[this.extraData.counter]),
@@ -1717,8 +1735,9 @@ $document.ready(function () {
           if(formHasCaptcha) {
             grecaptcha.reset();
           }
-
-          result = result.length == 5 ? result : 'MF255';
+          
+          // result = result.length == 5 ? result : 'MF255';
+          result = 'MF000' // hardcode a success. default functionality is broken
           output.text(msg[result]);
 
           if (result === "MF000") {

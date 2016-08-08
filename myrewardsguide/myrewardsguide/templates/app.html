@@ -27,14 +27,15 @@
 	            <div class="range range-sm-center offset-top-24">
 	              <div class="cell-sm-8 cell-md-6 cell-lg-4"><small>Get notified when our app goes live</small>
 	                <div class="offset-top-4">
-                    <form data-form-output="form-output-global" data-form-type="subscribe" method="post" action="bat/rd-mailform.php" class="rd-mailform">
-                      <div class="form-group">
-                        <div class="input-group input-group-sm">
-                          <input placeholder="Type your E-Mail" type="email" data-constraints="@Required @Email" name="email" class="form-control"><span class="input-group-btn">
-                            <button type="submit" class="btn btn-sm btn-primary">Subscribe</button></span>
-                        </div>
-                      </div>
-                    </form>
+                    <form data-form-output="form-subscribe-footer" data-form-type="subscribe" method="post" action="/api/subscribers/subscribers/" class="rd-mailform">
+		                <div class="form-group">
+		                  <div class="input-group input-group-sm"><span class="input-group-addon"><span class="input-group-icon mdi mdi-email"></span></span>
+		                    <input placeholder="Type your E-Mail" type="email" name="email" data-constraints="@Required @Email" class="form-control"><span class="input-group-btn">
+		                      <button type="submit" class="btn btn-sm btn-primary">Subscribe</button></span>
+		                  </div>
+		                </div>
+		                <div id="form-subscribe-footer" class="form-output"></div>
+		              </form>
 	                </div>
 	              </div>
 	            </div>
